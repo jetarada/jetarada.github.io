@@ -7,6 +7,6 @@ document.addEventListener('contextmenu', function(event) {
 document.addEventListener('keydown', function(event) {
     if (event.ctrlKey && event.key === 'u') {
         event.preventDefault();
-        // alert("Viewing source is disabled.");
+        alert("Viewing source is disabled.");
     }
 });
