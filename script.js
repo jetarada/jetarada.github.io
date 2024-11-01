@@ -5,7 +5,7 @@ document.addEventListener('contextmenu', function(event) {
 
 // Disable Ctrl+U
 document.addEventListener('keydown', function(event) {
-    if (event.ctrlKey && event.key === 'u') {
+    if ((event.ctrlKey && event.key === 'u') || (event.ctrlKey && event.key === 'U')) {
         event.preventDefault();
         alert("Viewing source is disabled.");
     }
